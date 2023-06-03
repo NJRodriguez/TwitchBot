@@ -1,0 +1,7 @@
+## User-specific
+.env
+.vscode
+
+## Node-specific
+package-lock.json
+node_modules
