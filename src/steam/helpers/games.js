@@ -19,7 +19,7 @@ async function getTenRandomLeastPlayed(user) {
 async function getGameFromUser(user, gameName) {
     const games = await steam.GetGames(user);
     const results = games.filter(game => {
-        return game.name.includes(gameName);
+        return game.name.toUpperCase().includes(gameName.toUpperCase());
     })
     return results;
 }
